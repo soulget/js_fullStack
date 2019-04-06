@@ -1,12 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="google-site-verification" content="ok0wCgT20tBBgo9_zat2iAcimtN4Ftf5ccsh092Xeyw">
+    <meta name="description" content="提供图书、电影、音乐唱片的推荐、评论和价格比较，以及城市独特的文化生活。">
+    <meta name="keywords" content="豆瓣,广播,登陆豆瓣">
+    <meta property="qc:admins" content="2554215131764752166375">
+    <meta property="wb:webmaster" content="375d4a17a4fa24c2">
+    <meta name="mobile-agent" content="format=html5; url=https://m.douban.com">
+    <title>豆瓣</title>
+    <script type="text/javascript" defer="" async="" src="https://img3.doubanio.com/dae/fundin/piwik.js"></script>
+    <script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-5WP579"></script>
+    <script type="text/javascript"
+        src="https://img3.doubanio.com/f/adjs/f7fcb2dca1f33ff6108874c49190caff5f600e34/ad.release.js"
+        async="true"></script>
+    <script>
+        function set_cookie(t, e, o, n) { var i, a, r = new Date; r.setTime(r.getTime() + 24 * (e || 30) * 60 * 60 * 1e3), i = "; expires=" + r.toGMTString(); for (a in t) document.cookie = a + "=" + t[a] + i + "; domain=" + (o || "douban.com") + "; path=" + (n || "/") } function get_cookie(t) { var e, o, n = t + "=", i = document.cookie.split(";"); for (e = 0; e < i.length; e++) { for (o = i[e]; " " == o.charAt(0);)o = o.substring(1, o.length); if (0 === o.indexOf(n)) return o.substring(n.length, o.length).replace(/\"/g, "") } return null } window.Douban = window.Douban || {}; var Do = function () { Do.actions.push([].slice.call(arguments)) }; Do.ready = function () { Do.actions.push([].slice.call(arguments)) }, Do.add = Do.define = function (t, e) { Do.mods[t] = e }, Do.global = function () { Do.global.mods = Array.prototype.concat(Do.global.mods, [].slice.call(arguments)) }, Do.global.mods = [], Do.mods = {}, Do.actions = [], Douban.init_show_login = function (t) { Do("dialog", function () { var t = "/j/misc/login_form"; dui.Dialog({ title: "登录", url: t, width: /device-mobile/i.test(document.documentElement.className) ? .9 * document.documentElement.offsetWidth : 350, cache: !0, callback: function (t, e) { e.node.addClass("dialog-login"), e.node.find("h2").css("display", "none"), e.node.find(".hd h3").replaceWith(e.node.find(".bd h3")), e.node.find("form").css({ border: "none", width: "auto", padding: "0" }), e.update() } }).open() }) }, Do(function () { function t(t, e) { var o = ["ref=" + encodeURIComponent(location.pathname)]; for (var n in e) e.hasOwnProperty(n) && o.push(n + "=" + e[n]); window._SPLITTEST && o.push("splittest=" + window._SPLITTEST), localStorage.setItem("report", (localStorage.getItem("report") || "") + "_moreurl_separator_" + o.join("&")) } !function () { "localStorage" in window || (window.localStorage = function () { var t = document; if (!t.documentElement.addBehavior) throw "don't support localstorage or userdata."; var e = "_localstorage_ie", o = t.createElement("input"); o.type = "hidden"; var n = function (n) { return function () { t.body.appendChild(o), o.addBehavior("#default#userData"); var i = new Date; i.setDate(i.getDate() + 365), o.expires = i.toUTCString(), o.load(e); var a = n.apply(o, arguments); return t.body.removeChild(o), a } }; return { getItem: n(function (t) { return this.getAttribute(t) }), setItem: n(function (t, o) { this.setAttribute(t, o), this.save(e) }), removeItem: n(function (t) { this.removeAttribute(t), this.save(e) }), clear: n(function () { for (var t, o = this.XMLDocument.documentElement.attributes, n = 0; t = o[n]; n++)this.removeAttribute(t.name); this.save(e) }) } }()) }(), $(window).one("load", function () { var t = localStorage.getItem("report"); if (t) { t = t.split("_moreurl_separator_"); var e = function (o) { return "" == o ? void e(t.shift()) : void $.get("undefined" == typeof _MOREURL_REQ ? "/stat.html?" + o : _MOREURL_REQ + "?" + o, function () { return t.length ? (e(t.shift()), void localStorage.setItem("report", t.join("_moreurl_separator_"))) : void localStorage.removeItem("report") }) }; e(t.shift()) } }), window.moreurl = t, $(document).click(function (e) { var o = e.target, n = $(o).data("moreurl-dict"); n && t(o, n) }), $.ajax_withck = function (t) { return "POST" == t.type && (t.data = $.extend(t.data || {}, { ck: get_cookie("ck") })), $.ajax(t) }, $.postJSON_withck = function (t, e, o) { return $.post_withck(t, e, o, "json") }, $.post_withck = function (t, e, o, n) { return $.isFunction(e) && (n = o, o = e, e = {}), $.ajax({ type: "POST", url: t, data: $.extend(e, { ck: get_cookie("ck") }), success: o, dataType: n || "text" }) }, $("html").click(function (t) { var e = $(t.target), o = e.attr("class"); o && $(o.match(/a_(\w+)/gi)).each($.proxy(function (e, o) { var n = Douban[o.replace(/^a_/, "init_")]; "function" == typeof n && (t.preventDefault(), n.call(this, t)) }, e[0])) }) });
+
+        Do.add('dialog', { path: 'https://img3.doubanio.com/f/shire/4ea3216519a6183c7bcd4f7d1a6d4fd57ce1a244/js/ui/dialog.js', type: 'js', requires: ['https://img3.doubanio.com/f/shire/8377b9498330a2e6f056d863987cc7a37eb4d486/css/ui/dialog.css'] });
+        Do.global('https://img3.doubanio.com/f/sns/b5793c2d7c298173d57ecf7d96708b5615336def/js/sns/fp/base.js', 'dialog');
+    </script>
+    <link rel="stylesheet"
+        href="https://img3.doubanio.com/f/shire/8b9fa55c839b74f72d2279a4f6839a2c8a1a9553/css/core/_init_.css">
+    <link rel="stylesheet"
+        href="https://img3.doubanio.com/f/sns/5f7f9b9ec880b690911b3c69c4b16b40665e9e3c/css/sns/anonymous_home.css">
+    <style type="text/css">
+        .rec_topics_name {
+            display: inline-block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            line-height: 1.3;
+            color: #3377aa;
+        }
+
+        .rec_topics_subtitle {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 13px;
+            line-height: 1;
+            color: #aaaaaa;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .rec_topics_label {
+            transform: translateY(-0.5px);
+            display: inline-block;
+            font-size: 13px;
+            margin-left: 2px;
+        }
+
+        .rec_topics {
+            line-height: 1;
+            margin-bottom: 15px;
+        }
+
+        .rec_topics:last-child {
+            margin-bottom: 0;
+        }
+
+        .rec_topics_label_ad {
+            color: #c9c9c9;
+            -moz-transform: scale(0.91);
+            -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+        }
+
+        html[class*=ua-ff] .rec_topics_subtitle {
+            line-height: 14px;
+        }
+    </style>
+    <script src="https://ssl.google-analytics.com/ga.js" async="true"></script>
+    <link rel="shortcut icon"
+        href="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1554179496&di=fcd240123f59feae50cdaf9159316f28&src=http://img.25pp.com/uploadfile/soft/images/2014/0612/20140612105752339.jpg">
     <link rel="stylesheet" href="./main.css">
+
 </head>
+
 <body>
     <div id="anony-nav">
         <div class="anony-nav-links">
@@ -17,21 +89,199 @@
                 <li><a target="_blank" href="https://www.douban.com/group/" class="lnk-group">豆瓣小组</a></li>
                 <li><a target="_blank" href="https://www.douban.com/location/" class="lnk-events">豆瓣同城</a></li>
                 <li><a target="_blank" href="https://douban.fm/" class="lnk-fm">豆瓣FM</a></li>
-                <li><a target="_blank" href="https://m.douban.com/time/?dt_time_source=douban-web_anonymous_index_top_nav" class="lnk-shijian">豆瓣时间</a></li>
-                <li><a target="_blank" href="https://market.douban.com/?utm_campaign=anonymous_top_nav&utm_source=douban&utm_medium=pc_web" class="lnk-market">豆瓣豆品</a></li>
+                <li><a target="_blank"
+                        href="https://m.douban.com/time/?dt_time_source=douban-web_anonymous_index_top_nav"
+                        class="lnk-shijian">豆瓣时间</a></li>
+                <li><a target="_blank"
+                        href="https://market.douban.com/?utm_campaign=anonymous_top_nav&utm_source=douban&utm_medium=pc_web"
+                        class="lnk-market">豆瓣豆品</a></li>
             </ul>
         </div>
         <h1><a href="https://www.douban.com">豆瓣</a></h1>
         <div class="anony-srh">
             <form action="https://www.douban.com/search" method="get">
-            <span class="inp">
-                <input type="text" maxlength="60" size="12" placeholder="书籍、电影、音乐、小组、小站、成员" name="q" autocomplete="off">
-            </span>
-            <span class="bn">
-                <input type="submit" value="搜索">
-            </span>
+                <span class="inp">
+                    <input type="text" maxlength="60" size="12" placeholder="书籍、电影、音乐、小组、小站、成员" name="q"
+                        autocomplete="off">
+                </span>
+                <span class="bn">
+                    <input type="submit" value="搜索">
+                </span>
             </form>
         </div>
     </div>
+    <div id="anony-reg-new"
+        style="background-image: url(https://img1.doubanio.com/view/puppy_image/raw/public/16874860437wq5ntbd7.jpg);">
+        <div class="wrapper">
+
+            <div class="login">
+                <iframe style="height: 300px; width: 300px;" frameborder="0"
+                    src="//accounts.douban.com/passport/login_popup?login_source=anony">
+
+                </iframe>
+            </div>
+            <div class="app">
+                <p class="app-title">
+                    "豆瓣"
+                    <span>6.0</span>
+                </p>
+                <p class="app-slogan">
+                </p>
+                <a href="https://www.douban.com/doubanapp/app?channel=nimingye" class="lnk-app">下载豆瓣 App</a>
+                <div class="app-qr">
+                    <a href="javascript: void 0;" class="lnk-qr" id="expand-qr"><img
+                            src="https://img3.doubanio.com/f/sns/0c708de69ce692883c1310053c5748c538938cb0/pics/sns/anony_home/icon_qrcode_green.png"
+                            width="28" height="28"></a>
+                    <div class="app-qr-expand">
+                        <img src="https://img3.doubanio.com/f/sns/1cad523e614ec4ecb6bf91b054436bb79098a958/pics/sns/anony_home/doubanapp_qrcode.png"
+                            width="160" height="160">
+                        <p>iOS / Android 扫码直接下载</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            Do(function () {
+                var app_qr = $('.app-qr');
+                app_qr.hover(function () {
+                }, function () {
+                    app_qr.removeClass('open');
+                });
+            });       
+        </script>
+    </div>
+    <div id="anony-sns" class="section">
+        <div class="wrapper">
+            <div id="dale_anonymous_homepage_top_for_crazy_ad" ad-status="loaded"></div>
+            <div class="side">
+                <div style="margin:10px 0px">
+                    <div id="dale_anonymous_homepage_right_top" ad-status="appended" data-sell-type="COMPLEMENT"
+                        data-type="DoubanRender" data-version="3.2.0">
+                        <iframe src="https://ad.doubanio.com"
+                            sandbox="allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation"
+                            width="250" height="125" frameborder="0" scrolling="no"
+                            name="dale_anonymous_homepage_right_top_frame" id="dale_anonymous_homepage_right_top_frame"
+                            style="position: relative; margin: 0px 0px 20px; display: block; width: 250px; height: 125px; overflow: hidden;">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="online">
+                    <ul>
+                        <div class="mod">
+                            <h2>热门话题
+                                &nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;
+                                <span class="p1">&nbsp;(<a href="/gallery/" target="_self">去话题广场</a>)</span>
+                            </h2>
+                            <ul>
+        
+                                    <li class="rec_topics">
+                                            <a href="https://www.douban.com/gallery/topic/63854/?from=hot_topic_anony_sns" class="rec_topics_name">我的音乐卡带情结</a>
+                                            
+                                            <span class="rec_topics_subtitle">30134人浏览</span>
+                                    </li>
+                                    <li class="rec_topics">
+                                            <a href="https://www.douban.com/gallery/topic/64265/?from=hot_topic_anony_sns" class="rec_topics_name">半格相机慢半拍</a>
+                                            
+                                            <span class="rec_topics_subtitle">13744人浏览</span>
+                                    </li>
+                                    <li class="rec_topics">
+                                            <a href="https://www.douban.com/gallery/topic/63169/?from=hot_topic_anony_sns" class="rec_topics_name">⾖瓣街头故事摄影大赛</a>
+                                            
+                                            <span class="rec_topics_subtitle">3243312人浏览</span>
+                                    </li>
+                                    <li class="rec_topics">
+                                            <a href="https://www.douban.com/gallery/topic/61574/?from=hot_topic_anony_sns" class="rec_topics_name">你镜头下的破晓时分</a>
+                                            
+                                            <span class="rec_topics_subtitle">238304人浏览</span>
+                                    </li>
+                                    <li class="rec_topics">
+                                            <a href="https://www.douban.com/gallery/topic/55023/?from=hot_topic_anony_sns" class="rec_topics_name">春季植物鉴赏雅集</a>
+                                            
+                                            <span class="rec_topics_subtitle">2638403人浏览</span>
+                                    </li>
+                                    <li class="rec_topics">
+                                            <a href="https://www.douban.com/gallery/topic/64369/?from=hot_topic_anony_sns" class="rec_topics_name">你身边的无障碍设施</a>
+                                            
+                                            <span class="rec_topics_subtitle">新话题 · 1605人浏览</span>
+                                    </li>
+                            </ul>
+                        </div>
+                            <li>
+                                    <div id="dale_homepage_online_activity_promo_1" ad-status="loaded"></div>
+                            </li>
+                            <li>
+                                    <div id="dale_anonymous_homepage_doublemint" ad-status="loaded"></div>
+                            </li>                        
+                    </ul>
+                </div>
+            </div>
+            <div class="main">
+                <div class="mod">
+                    <h2>
+                        
+        热点内容
+        &nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·
+        <span class="pl">&nbsp;(
+                
+                <a href="https://www.douban.com/explore/" target="_self">更多</a>
+            ) </span>
+                    </h2>
+                    <div class="albums">
+                            <ul>
+                                    <li>
+                                    <div class="pic">
+                                        <a href="https://www.douban.com/photos/album/30322941/"><img src="https://img1.doubanio.com/view/photo/albumcover/public/p2552025159.webp" data-origin="https://img1.doubanio.com/view/photo/albumcover/public/p2552025159.webp" alt=""></a>
+                                    </div>
+                                    <a href="https://www.douban.com/photos/album/30322941/">有名字的那一帧</a>
+                                    <span class="num">1599张照片</span>
+                                    </li><li>
+                                    <div class="pic">
+                                        <a href="https://www.douban.com/photos/album/1680738895/"><img src="https://img3.doubanio.com/view/photo/albumcover/public/p2540404034.webp" data-origin="https://img3.doubanio.com/view/photo/albumcover/public/p2540404034.webp" alt=""></a>
+                                    </div>
+                                    <a href="https://www.douban.com/photos/album/1680738895/">早市系列</a>
+                                    <span class="num">58张照片</span>
+                                    </li><li>
+                                    <div class="pic">
+                                        <a href="https://www.douban.com/photos/album/1686239693/"><img src="https://img3.doubanio.com/view/photo/albumcover/public/p2551170880.webp" data-origin="https://img3.doubanio.com/view/photo/albumcover/public/p2551170880.webp" alt=""></a>
+                                    </div>
+                                    <a href="https://www.douban.com/photos/album/1686239693/">略接近的 西伯利亚</a>
+                                    <span class="num">90张照片</span>
+                                    </li><li>
+                                    <div class="pic">
+                                        <a href="https://www.douban.com/photos/album/1686291219/"><img src="https://img1.doubanio.com/view/photo/albumcover/public/p2551191378.webp" data-origin="https://img1.doubanio.com/view/photo/albumcover/public/p2551191378.webp" alt=""></a>
+                                    </div>
+                                    <a href="https://www.douban.com/photos/album/1686291219/">斯 德 哥 尔 摩 地 下 铁</a>
+                                    <span class="num">55张照片</span>
+                                  </li></ul>
+                    </div>
+                    <div class="notes">
+                            <ul>
+                                    <li class="first">
+                                    <div class="title">
+                                        <a href="https://www.douban.com/note/707455112/">在Santiago找到我的城市</a>
+                                    </div>
+                                    <div class="author">
+                                      懿千叶的日记
+                                    </div>
+                                    <p>智利之狭长拉开了无数波澜壮阔的美景，首都圣地亚哥就有点给比了下去。但自己一无...</p>
+                                    </li>
+                              
+                                    <li><a href="https://www.douban.com/note/711061192/">养狼的皮总统和产蜜的尊严殖民地</a></li>
+                                    <li><a href="https://www.douban.com/note/708438563/">在寺院过年</a></li>
+                                    <li><a href="https://www.douban.com/note/711077414/">流行艺术中的LGBT视觉传达与Lady Gaga同志偶像地位的确立</a></li>
+                                    <li><a href="https://www.douban.com/note/710151909/">被驱逐的法国人——大草地</a></li>
+                                    <li><a href="https://www.douban.com/note/712457537/">伍德斯托克在河南</a></li>
+                                    <li><a href="https://www.douban.com/note/711020975/">3年时间探访31个原始部落，每一张照片背后是缤纷多样的人类文明之美</a></li>
+                                    <li><a href="https://www.douban.com/note/705888829/">年货历史记忆指南</a></li>
+                                    <li><a href="https://www.douban.com/note/712577692/">反对996加班制：10万中国程序员拿起《劳动法》曝光IT大厂</a></li>
+                                    <li><a href="https://www.douban.com/note/708063004/">平成的动画电影 PART II 方向</a></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

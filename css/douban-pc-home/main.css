@@ -17,7 +17,7 @@ body {
     width: 950px;
     margin: 0 auto 25px;
 }
-#anony-nav .anony-nav-link{
+#anony-nav .anony-nav-links{
     float: right;
     margin-top: 6px;
 }
@@ -205,4 +205,209 @@ input{
     font-size: 0;
     color: transparent;
     cursor: pointer;
+}
+#anony-reg-new{
+    margin-bottom: 25px;
+    background-size: contain;
+    background-position: calc(50% - 350px) top;
+    background-repeat: no-repeat;
+    background-color: #edf4ed;
+}
+#anony-reg-new .wrapper::after{
+    content: "\0020";
+    display: block;
+    clear: both;
+}
+#anony-reg-new .wrapper::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: 0 -150px;
+}
+.wrapper{
+    width: 950px;
+    margin: 0 auto;
+}
+#anony-reg-new .wrapper{
+    position: relative;
+    padding: 0 0 4px;
+    overflow: visible;
+    zoom: 1;
+}
+#anony-reg-new .login{
+    width: 300px;
+    float:right;
+    font-size: 0;
+    letter-spacing: -.31em;
+}
+#anony-reg-new .wrapper .login, #anony-reg-new .wrapper .app {
+    z-index: 2;
+}
+#anony-reg-new .login{
+    position: relative;
+}
+iframe {
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+iframe {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+}
+element.style {
+    height: 300px;
+    width: 300px;
+}
+#anony-reg-new .app{
+    position: absolute;
+    height: 120px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0 auto 475px;
+}
+
+
+#anony-reg-new .wrapper .login, #anony-reg-new .wrapper .app {
+    z-index: 2;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#anony-reg-new .app-title{
+    margin: 7px 0;
+    font-size: 25px;
+    color: #111;
+    line-height: 24px;
+    -webkit-font-something:antialiased;
+    text-rendering: optimizeLegibility;
+}
+#anony-reg-new .app-title span {
+    color: #111;
+    margin-left: 10px;
+    font-weight: 100;
+}
+#anony-reg-new .app-slogan:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#anony-reg-new .app-slogan{
+    margin: 0 0 18px;
+    font-size: 0;
+    color: #111;
+    -webkit-font-something:antialiased;
+    text-rendering: optimizeLegibility;
+}
+a{
+    cursor: pointer;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color: #669;
+    text-decoration: none;
+}
+#anony-reg-new .lnk-app {
+    display: inline-block;
+    /* *display: inline; */
+    zoom: 1;
+    padding: 9px 21px;
+    margin-right: 2px;
+    vertical-align: top;
+    border-radius: 2px;
+    font-size: 12px;
+    background: #00B51D;
+    color: #FFF;
+    line-height: 1;
+}
+#anony-reg-new .link-app:link{
+    background: #00B51D;
+    color: #FFF;
+}
+#anony-reg-new .app-qr{
+    display: inline-block;
+    zoom: 1;
+    position: relative;
+}
+a{
+    cursor: pointer;
+}
+a:link{
+    color: #37a;
+    text-decoration: none;
+}
+a:visited{
+    color: #669;
+    text-decoration: none;
+}
+#anony-reg-new .lnk-qr{
+    display: inline-block;
+    zoom: 1;
+    border: 1px solid#48aa0d;
+    border-radius: 2px;
+}
+#anony-reg-new .lnk-qr:link, #anony-reg-new .lnk-qr:visited, #anony-reg-new .lnk-qr:hover, #anony-reg-new .lnk-qr:active {
+    background: transparent;
+} 
+fieldset, img {
+    border: 0;
+}
+a img {
+    border-width: 0;
+    vertical-align: middle;
+}
+#anony-reg-new .app-qr-expand {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 20px 5px;
+    border-radius: 2px;
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+    background: #fff;
+    line-height: 13px;
+    white-space: nowrap;
+}
+
+fieldset, img {
+    border: 0;
+}
+ p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} 
+.section .wrapper:before, .section .wrapper:after {
+    content: "\0020";
+    display: block;
+    clear: both;
+}
+div{
+    display: block;
 }
